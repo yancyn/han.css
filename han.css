@@ -27,8 +27,11 @@ html {
   padding-left: 60px;
   padding-right: 60px;
   min-height: calc(100vh - 6em);
-  -webkit-font-smoothing: antialiased;
   font-size: 16px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  text-orientation: mixed;
+  overflow-x: auto; /* This enables horizontal scrolling */
 }
 
 .typora-node #write {
@@ -313,6 +316,15 @@ hr {
 #write p, #write .md-fences, #write ul, #write ol, #write dl, #write form, #write hr, #write figure,
 #write-p, #write-pre, #write-ul, #write-ol, #write-dl, #write-form, #write-hr, #write-table, blockquote {
   margin-bottom: 1.2em
+}
+#write > p:first-child,
+#write > ul:first-child,
+#write > ol:first-child,
+#write > pre:first-child,
+#write > blockquote:first-child,
+#write > div:first-child,
+#write > table:first-child {
+    margin-top: 0;
 }
 
 html {
