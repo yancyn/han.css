@@ -1,5 +1,7 @@
 # han.css
-Vertical layout of Typora Han.css
+Vertical layout of Typora Han.css.
+
+![image](image.png)
 
 ## How to
 1. Install [Typora](https://typora.io/).
